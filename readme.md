@@ -1,10 +1,12 @@
-# JsBooklet as fundemental refresher
+# JsBooklet as fundemental refresher - (work in progress)
 
-#### VanillaJs Fundementals
+#### VanillaJs Booklet
 - Variables
 - Arrays
 - Loops
-- Conditionals
+- Conditions
 - Objects
 - Events
-- Forms
+
+- Tasks
+
