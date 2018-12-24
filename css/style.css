@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Lobster'; /*a name to be used later*/
+    src: url('../font/Lobster_1.4.otf'); /*URL to font*/
+}
+.fancy{
+  font-family: 'Lobster';
+  font-size: 1.2em;
+}
+
+.along{
+  height: 100vh;
+  overflow-y: scroll;
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+pre {
+  /* Set "counter" to 0 */
+  counter-reset: counter;
+  max-height: 20em;
+}
+
+code::before {
+  /* Increment "counter" by 1 */
+  counter-increment: counter;
+  content: counter(counter, decimal-leading-zero) " ";
+  border-right: 1px solid black;
+  margin-right: 0.5em;
+  font-size:1.2em;
+}
+
+pre[class*="language-"] {
+    padding: 1em;
+    margin: 0;
+    overflow: auto;
+}
+
+code[class*="language-"], pre[class*="language-"]{
+  line-height: 1;
+  font-size: 1em;
+}
+
+.btn-sm{
+  padding: 0.1rem 0.5rem;
+}
+
+ul li.list-group-item{
+  cursor: pointer;
+}
+
+._pin{
+  display: none;
+}
+.mobile_main_msg{
+  display: none;
+}
+.desktop_main_msg{
+  display: block !important;
+}
+
+/* Custom MediQuery */
+@media screen and (max-width: 768px){
+  ._content{
+    background-color: white;
+    min-height: 100vh;
+  }
+  ._navbar{
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+  }
+  ._pin{
+    display: block !important;
+    text-align: right !important;
+  }
+  ._pin i{
+    cursor: pointer;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+  }
+  .mobile_main_msg{
+    display: block !important;
+  }
+  .desktop_main_msg{
+    display: none !important;
+  }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="VanillaJs Fundementals tutorial">
+  <meta name="keywords" content="HTML,code,tags,js,jquery">
+  <meta name="author" content="r4nd3l">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/bootstrap_v4.css">
+  <link rel="stylesheet" href="css/font-awesome-animation.css">
+  <link rel="stylesheet" href="css/prism.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>JsBooklet</title>
+</head>
+<body onload="mainPage()">
+  <div class="container-fluid">
+    <div class="row">
+      <div id="_navbar" class="col-md-3 border-right bg-light position-fixed shadow-sm along py-3 _navbar">
+        <div class="" id="myBtn">
+          <h5><i class="fas fa-book fa-fw text-primary"></i> VanillaJs Booklet</h5>
+          <hr>
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between btn align-items-center active" id="home">Home</li>
+          </ul>
+          <hr>
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center" id="variables">Variables<span class="badge badge-primary badge-pill">8</span></li>
+            <li class="list-group-item d-flex justify-content-between align-items-center" id="arrays">Arrays<span class="badge badge-primary badge-pill">12</span></li>
+            <li class="list-group-item d-flex justify-content-between align-items-center" id="loops">Loops<span class="badge badge-primary badge-pill">7</span></li>
+            <li class="list-group-item d-flex justify-content-between align-items-center" id="conditionals">Conditions<span class="badge badge-primary badge-pill">11</span></li>
+            <li class="list-group-item d-flex justify-content-between align-items-center" id="objects">Objects<span class="badge badge-primary badge-pill">14</span></li>
+            <li class="list-group-item d-flex justify-content-between align-items-center" id="events">Events<span class="badge badge-primary badge-pill">8</span></li>
+          </ul>
+          <hr>
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between btn align-items-center" id="tasks">Tasks<span class="badge badge-primary badge-pill">1</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-9 ml-md-auto _content">
+        <div class="_pin">
+          <div class="float-left mt-3">
+            <h5><i class="fas fa-book fa-fw text-primary"></i> VanillaJs Booklet</h5>
+          </div>
+          <i class="fas fa-bars fa-lg p-3 rounded border border-top-0" onclick="navBar()"></i></div>
+        <div id="show" class="my-3"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  <script src="js/prism.js"></script>
+
+  <script type="text/javascript">
+    document.getElementById("myBtn").addEventListener("click", changeMenu);
+
+    function changeMenu() {
+      document.getElementById("_navbar").style.zIndex = "-1";
+    }
+
+    function navBar(){
+      document.getElementById("_navbar").style.zIndex = "1";
+    }
+
+    $(document).ready(function mainPage(){
+      $('#show').load("tasks/home.html");
+    });
+      $('#home').click(function(){$('#show').load("tasks/home.html");});
+      $('#variables').click(function(){$('#show').load("tasks/variables.html");});
+      $('#arrays').click(function(){$('#show').load("tasks/arrays.html");});
+      $('#loops').click(function(){$('#show').load("tasks/loops.html");});
+      $('#conditionals').click(function(){$('#show').load("tasks/conditionals.html");});
+      $('#objects').click(function(){$('#show').load("tasks/objects.html");});
+      $('#events').click(function(){$('#show').load("tasks/events.html");});
+      $('#tasks').click(function(){$('#show').load("tasks/tasks.html");});
+  </script>
+</body>
+</html>

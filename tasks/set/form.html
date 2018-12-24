@@ -1,0 +1,203 @@
+<body>
+  <div class="row mt-3">
+      <div class="col-md-12">
+        <div class="card shadow-sm">
+          <div class="card-header btn-light alert-secondary text-center" style="cursor:pointer;" data-toggle="collapse" href="#variables_01" role="button" aria-expanded="false" aria-controls="variables_01">
+            <!-- <span class="align-middle mr-2"><b>Example number</b></span> -->
+            <!-- <span class="badge badge-secondary mr-2">#01</span> -->
+            <b class="align-middle fancy mr-2">Tha Form</b>
+          </div>
+          <div class="card-body collapse multi-collapse" id="variables_01">
+            <blockquote class="mb-0">
+              <p class="mb-2">This form is about..</p>
+              <hr>
+              <div class="row">
+
+                <!-- HTML Code -->
+                <div class="col-md-12">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="alert alert-info mb-0 px-3 rounded-top border-bottom-0" role="alert" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
+                        <i class="fab fa-html5 fa-lg"></i>
+                        <span class="ml-2">
+                          <b>form.html</b>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="">
+
+<pre class="border rounded-bottom"><code class="language-js">&lt;!-- Notice that the code below is using the Bootstrap framework --&gt;</code>
+<code class="language-js">  &lt;div class="row"&gt;</code>
+<code class="language-js">    &lt;div class="col-md-4 offset-md-4"&gt;</code>
+<code class="language-js">      &lt;div class="card shadow-sm"&gt;</code>
+<code class="language-js">        &lt;div class="card-header alert-secondary" role="alert"&gt;</code>
+<code class="language-js">         &lt;span id="color"&gt;Example form&lt;/span&gt;</code>
+<code class="language-js">       &lt;/div&gt;</code>
+<code class="language-js">        &lt;div class="card-body"&gt;</code>
+<code class="language-js">         &lt;form name="myForm" action="something.php" method="post" onsubmit="return validateForm()"&gt;</code>
+<code class="language-js">            &lt;div class="form-group"&gt;</code>
+<code class="language-js">             &lt;label&gt;First Name&lt;/label&gt;</code>
+<code class="language-js">             &lt;input class="form-control" type="text" name="firstName" id="firstName"&gt;</code>
+<code class="language-js">           &lt;/div&gt;</code>
+<code class="language-js">            &lt;div class="form-group"&gt;</code>
+<code class="language-js">             &lt;label&gt;Last Name&lt;/label&gt;</code>
+<code class="language-js">             &lt;input class="form-control" type="text" name="lastName" id="lastName"&gt;</code>
+<code class="language-js">           &lt;/div&gt;</code>
+<code class="language-js">            &lt;div class="form-group"&gt;</code>
+<code class="language-js">             &lt;label for="background"&gt;Color of the heading&lt;/label&gt;</code>
+<code class="language-js">             &lt;select class="custom-select" name="background" onchange="changeBackground(this)"&gt;</code>
+<code class="language-js">               &lt;option selected&gt;Open this select menu&lt;/option&gt;</code>
+<code class="language-js">               &lt;option value="red"&gt;Red&lt;/option&gt;</code>
+<code class="language-js">               &lt;option value="blue"&gt;Blue&lt;/option&gt;</code>
+<code class="language-js">               &lt;option value="green"&gt;Green&lt;/option&gt;</code>
+<code class="language-js">               &lt;option value="black"&gt;Black&lt;/option&gt;</code>
+<code class="language-js">             &lt;/select&gt;</code>
+<code class="language-js">           &lt;/div&gt;</code>
+<code class="language-js">           &lt;input class="btn btn-primary" type="submit" value="Submit"&gt;</code>
+<code class="language-js">         &lt;/form&gt;</code>
+<code class="language-js">       &lt;/div&gt;</code>
+<code class="language-js">     &lt;/div&gt;</code>
+<code class="language-js">   &lt;/div&gt;</code>
+<code class="language-js"> &lt;/div&gt;</code></pre>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- JS Code -->
+                <div class="col-md-12 my-2">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="alert alert-warning mb-0 px-3 rounded-top border-bottom-0" role="alert" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
+                        <i class="fab fa-js-square fa-lg"></i>
+                        <span class="ml-2">
+                          <b>form.js</b>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="">
+
+<pre class="border rounded-bottom"><code class="language-js">&lt;!-- Notice that the code below is using the Bootstrap framework --&gt;</code>
+<code class="language-js">  function changeBackground(x) {</code>
+<code class="language-js">    // console.log(x.value);</code>
+<code class="language-js">    var heading = document.getElementById(&apos;color&apos;);</code>
+<code class="language-js">    heading.style.color = x.value;</code>
+<code class="language-js">  }</code>
+<code class="language-js"></code>
+<code class="language-js">  function validateForm(){</code>
+<code class="language-js">    var firstName = document.forms[&quot;myForm&quot;][&quot;firstName&quot;].value;</code>
+<code class="language-js">    var lastName = document.forms[&quot;myForm&quot;][&quot;lastName&quot;].value;</code>
+<code class="language-js">    if (firstName == null || firstName == &quot;&quot;) {</code>
+<code class="language-js">      alert(&quot;First name is required!&quot;);</code>
+<code class="language-js">      return false;</code>
+<code class="language-js">    }</code>
+<code class="language-js"></code>
+<code class="language-js">    if (firstName.length &lt; 3) {</code>
+<code class="language-js">      alert(&quot;First name must be at least 3 chars!&quot;);</code>
+<code class="language-js">      return false;</code>
+<code class="language-js">    }</code>
+<code class="language-js"></code>
+<code class="language-js">    if (lastName == null || lastName == &quot;&quot;) {</code>
+<code class="language-js">      alert(&quot;Last name is required!&quot;);</code>
+<code class="language-js">      return false;</code>
+<code class="language-js">    }</code>
+<code class="language-js"></code>
+<code class="language-js">    if (lastName.length &lt; 3) {</code>
+<code class="language-js">      alert(&quot;Last name must be at least 3 chars!&quot;);</code>
+<code class="language-js">      return false;</code>
+<code class="language-js">    }</code>
+<code class="language-js"></code>
+<code class="language-js">  }</code>
+</pre>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="alert alert-success mb-0 px-3 rounded-top border-bottom-0" role="alert" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
+                        <i class="fas fa-code fa-fw"></i>
+                        <span class="ml-2">
+                          <b>Execute the code here</b>
+                          <!-- <button class="btn btn-success btn-sm float-right faa-parent animated-hover" onclick="forInstance_01()">Run <i class="fas fa-cog faa-spin"></i></button> -->
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="border rounded-bottom" style="background-color: #f5f2f0;">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <h6 class="ml-3" style="margin-top: 0.75em;">Sample</h6>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="my-2 mr-3 float-right">
+                              <!-- <button class="btn btn-danger btn-sm faa-parent animated-hover" onclick="forInstance_01()">Reset <i class="fas fa-redo-alt faa-spin"></i></button> -->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="m-3">
+                              <!-- Begin - Example part -->
+                              <div class="row">
+                                <div class="col-md-4 offset-md-4">
+                                  <div class="card shadow-sm">
+                                    <div class="card-header alert-secondary" role="alert">
+                                      <span id="color">Example form</span>
+                                    </div>
+                                    <div class="card-body">
+                                      <form name="myForm" action="something.php" method="post" onsubmit="return validateForm()">
+                                        <div class="form-group">
+                                          <label>First Name</label>
+                                          <input class="form-control" type="text" name="firstName" id="firstName">
+                                        </div>
+                                        <div class="form-group">
+                                          <label>Last Name</label>
+                                          <input class="form-control" type="text" name="lastName" id="lastName">
+                                        </div>
+                                        <div class="form-group">
+                                          <label for="background">Color of the heading</label>
+                                          <select class="custom-select" name="background" onchange="changeBackground(this)">
+                                            <option selected>Open this select menu</option>
+                                            <option value="red">Red</option>
+                                            <option value="blue">Blue</option>
+                                            <option value="green">Green</option>
+                                            <option value="black">Black</option>
+                                          </select>
+                                        </div>
+                                        <input class="btn btn-primary" type="submit" value="Submit">
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- End - Example part -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <script src="js/prism.js"></script>
+  <script src="js/_form.js" charset="utf-8"></script>
+</body>
