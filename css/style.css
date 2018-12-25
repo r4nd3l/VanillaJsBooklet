@@ -60,7 +60,6 @@ ul li.list-group-item{
 .desktop_main_msg{
   display: block !important;
 }
-
 /* Custom MediQuery */
 @media screen and (max-width: 768px){
   ._content{
