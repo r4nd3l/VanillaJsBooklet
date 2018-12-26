@@ -59,7 +59,9 @@
   <script src="js/prism.js"></script>
 
   <script type="text/javascript">
-    document.getElementById("myBtn").addEventListener("click", changeMenu);
+    if (screen.width < 768) {
+      document.getElementById("myBtn").addEventListener("click", changeMenu);
+    }
 
     function changeMenu() {
       document.getElementById("_navbar").style.zIndex = "-1";

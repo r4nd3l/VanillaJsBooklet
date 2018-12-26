@@ -50,7 +50,6 @@ code[class*="language-"], pre[class*="language-"]{
 ul li.list-group-item{
   cursor: pointer;
 }
-
 ._pin{
   display: none;
 }
