@@ -46,8 +46,10 @@
           <div class="float-left mt-3">
             <h5><i class="fas fa-book fa-fw text-primary"></i> VanillaJs Booklet</h5>
           </div>
-          <i class="fas fa-bars fa-lg p-3 rounded border border-top-0" onclick="navBar()"></i></div>
+          <i class="fas fa-bars fa-lg p-3 rounded border border-top-0" onclick="navBar()"></i>
+        </div>
         <div id="show" class="my-3"></div>
+
       </div>
     </div>
   </div>
@@ -57,31 +59,6 @@
   <script src="js/bootstrap.js"></script>
 
   <script src="js/prism.js"></script>
-
-  <script type="text/javascript">
-    if (screen.width < 768) {
-      document.getElementById("myBtn").addEventListener("click", changeMenu);
-    }
-
-    function changeMenu() {
-      document.getElementById("_navbar").style.zIndex = "-1";
-    }
-
-    function navBar(){
-      document.getElementById("_navbar").style.zIndex = "1";
-    }
-
-    $(document).ready(function mainPage(){
-      $('#show').load("tasks/home.html");
-    });
-      $('#home').click(function(){$('#show').load("tasks/home.html");});
-      $('#variables').click(function(){$('#show').load("tasks/variables.html");});
-      $('#arrays').click(function(){$('#show').load("tasks/arrays.html");});
-      $('#loops').click(function(){$('#show').load("tasks/loops.html");});
-      $('#conditionals').click(function(){$('#show').load("tasks/conditionals.html");});
-      $('#objects').click(function(){$('#show').load("tasks/objects.html");});
-      $('#events').click(function(){$('#show').load("tasks/events.html");});
-      $('#tasks').click(function(){$('#show').load("tasks/tasks.html");});
-  </script>
+  <script src="js/view.js"></script>
 </body>
 </html>
