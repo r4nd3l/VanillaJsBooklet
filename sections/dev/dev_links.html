@@ -1,4 +1,4 @@
-<body>
+<body onload="fetchBookmarks()">
   <div class="">
 
     <!-- 00 -->
@@ -10,14 +10,45 @@
           </div>
           <div class="card-body">
             <blockquote class="mb-0">
-              <p class="mb-2">Collect your external resourses (links) here!</p>
+              <p class="mb-2">Collect your external resourses <b>(links)</b> here!</p>
+              <hr>
+              <div id="myForm" class="row">
+                <div class="col-md-4">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fas fa-tag fa-fw text-primary"></i></span>
+                    </div>
+                    <input type="text" class="form-control" id="siteName" placeholder="Website Name">
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fas fa-external-link-alt fa-fw text-primary"></i></span>
+                    </div>
+                    <input type="text" class="form-control" id="siteUrl" placeholder="Website Name">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="submit">Add</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </blockquote>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Dev Links Boxes -->
+    <div class="row mt-3">
+      <div class="row ">
+        <div class="col-lg-12">
+          <div id="bookmarksResults"></div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
-  
+  <script src="js/for_dev/dev_links.js" charset="utf-8"></script>
 </body>

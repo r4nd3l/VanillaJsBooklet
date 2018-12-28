@@ -11,7 +11,8 @@ function navBar(){
 }
 
 $(document).ready(function mainPage(){
-  $('#show').fadeOut(300, function(){$('#show').load("sections/main/home.html", function(){$('#show').fadeIn(300);});});
+  // $('#show').fadeOut(300, function(){$('#show').load("sections/main/home.html", function(){$('#show').fadeIn(300);});});
+  $('#show').fadeOut(300, function(){$('#show').load("sections/dev/dev_links.html", function(){$('#show').fadeIn(300);});});
 
   $('#home').click(function(){$('#show').fadeOut(300, function(){$('#show').load("sections/main/home.html", function(){$('#show').fadeIn(300);});});});
   $('#variables').click(function(){$('#show').fadeOut(300, function(){$('#show').load("sections/instances/variables.html", function(){$('#show').fadeIn(300);});});});
