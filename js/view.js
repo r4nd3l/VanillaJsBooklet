@@ -12,7 +12,7 @@ function navBar(){
 
 $(document).ready(function mainPage(){
   // $('#show').fadeOut(300, function(){$('#show').load("sections/main/home.html", function(){$('#show').fadeIn(300);});});
-  $('#show').fadeOut(300, function(){$('#show').load("sections/dev/dev_links.html", function(){$('#show').fadeIn(300);});});
+  $('#show').fadeOut(300, function(){$('#show').load("sections/main/home.html", function(){$('#show').fadeIn(300);});});
 
   $('#home').click(function(){$('#show').fadeOut(300, function(){$('#show').load("sections/main/home.html", function(){$('#show').fadeIn(300);});});});
   $('#variables').click(function(){$('#show').fadeOut(300, function(){$('#show').load("sections/instances/variables.html", function(){$('#show').fadeIn(300);});});});
@@ -22,6 +22,6 @@ $(document).ready(function mainPage(){
   $('#objects').click(function(){$('#show').fadeOut(300, function(){$('#show').load("sections/instances/objects.html", function(){$('#show').fadeIn(300);});});});
   $('#events').click(function(){$('#show').fadeOut(300, function(){$('#show').load("sections/instances/events.html", function(){$('#show').fadeIn(300);});});});
   $('#tasks').click(function(){$('#show').fadeOut(300, function(){$('#show').load("sections/tasks/tasks.html", function(){$('#show').fadeIn(300);});});});
-  $('#dev_corner').click(function(){$('#show').fadeOut(300, function(){$('#show').load("sections/dev/dev_corner.html", function(){$('#show').fadeIn(300);});});});
-  $('#dev_links').click(function(){$('#show').fadeOut(300, function(){$('#show').load("sections/dev/dev_links.html", function(){$('#show').fadeIn(300);});});});
+  $('#dev_corner').click(function(){$('#show').fadeOut(300, function(){$('#show').load("sections/dev/dev_corner/dev_corner.html", function(){$('#show').fadeIn(300);});});});
+  $('#dev_links').click(function(){$('#show').fadeOut(300, function(){$('#show').load("sections/dev/dev_links/index.php", function(){$('#show').fadeIn(300);});});});
 });
